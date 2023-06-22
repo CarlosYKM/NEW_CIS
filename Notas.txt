@@ -1,0 +1,6 @@
+npm init
+npm i express
+npm i /*Para instalar en package.json todos aquellas dependencias que uses si eliminas la carpeta node_modules siempre y cuando estas esten en la seccion de dependences
+npm i -D express //*Para instalar dependencias de desarrollo
+npm i -D nodemon //*Dependencia de desarrollo para reiniciar el servidor automaticamente cadavez que guardemos algun cambio
+"server": "nodemon index.js" // >npm run server_
