@@ -3,9 +3,18 @@
 //Importacion con metodo EMACS
 import express from 'express'
 import usuarioRoutes from './routes/usuarioRoutes.js'
-
+import db from './config/db.js'
 //Crear app
 const app = express() 
+
+//Conexion a la base de datos
+try{
+    await db.authentificate();
+    console.log('CONEXION ESTABLECIDA')
+}catch(error){
+    console.log(error)
+}
+
 
 //Habilitar Pug Nota: Template Engine Monolitica
 app.set('view engine', 'pug')//Set para agregar configuracion

@@ -16,3 +16,4 @@ INSERT INTO `Categorias`(`nombre`) Values('Casa')
 ORM Ejm.
 Categoria.create({nombre:'Casa'})
 
+npm i sequelize mysql2
