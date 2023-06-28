@@ -5,4 +5,14 @@ npm i -D express //*Para instalar dependencias de desarrollo
 npm i -D nodemon //*Dependencia de desarrollo para reiniciar el servidor automaticamente cadavez que guardemos algun cambio
 "server": "nodemon index.js" // >npm run server_
 npm i pug //*Para instalar el Templates Engine de Pug
-npm i -D Tailwind autoprefixer postcss postcss-cliç
+npm i -D Tailwind autoprefixer postcss postcss-cli
+npx tailwind init -p //* Va a crear dos archivos postcss tailwind.config.js
+
+Por cuestiones de seguridad informatica, evitar injections de SQL, se utilizara ORM
+ORM (Object Relational Mapping) Sequelize, TypeORM
+
+SQL Ejm.
+INSERT INTO `Categorias`(`nombre`) Values('Casa')
+ORM Ejm.
+Categoria.create({nombre:'Casa'})
+

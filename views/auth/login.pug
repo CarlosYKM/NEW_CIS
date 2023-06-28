@@ -1,1 +1,22 @@
-h2 este es el login 
+extend ../layout/index
+
+block contenido
+  div.py-10
+    h1.text-4xl.my-10.font-extrabold.text-center NEW
+      span.font-normal CIS
+    h2.text-center.text-2xl.font-extrabold= pagina
+
+    div.mt-8.mx-auto.max-w-md
+        div.bg-white.py-8.px-4.shadow
+            form.space-y-5
+                div
+                label.block.text-center.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="Usuario") Control de Inventario de Suministros
+        div.bg-white.py-8.px-4.shadow
+            form.space-y-5
+                div
+                label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="Usuario") Usuario
+                input#nombre.w-full.px-3.py-2.border-gray-300.rounded-md(placeholder="Usuario" type="email" name="Usuario")
+                div
+                label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="Contrasena") Contraseña
+                input#nombre.w-full.px-3.py-2.border-gray-300.rounded-md(placeholder="Contraseña" type="password" name="Contrasena")
+                input(class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Iniciar Sesión")
