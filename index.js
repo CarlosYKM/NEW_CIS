@@ -1,12 +1,13 @@
 //Archivo principal, se encarga de llamar todos los demas archivos de la app
 
 //Importacion con metodo EMACS
-import expres from 'express'
+import express from 'express'
+import usuarioRoutes from './routes/usuarioRoutes.js'
 
 //Crear app
 const app = express() 
 
-//Habilitar Pug
+//Habilitar Pug Nota: Template Engine Monolitica
 app.set('view engine', 'pug')//Set para agregar configuracion
 app.set('views', './views')
 
@@ -16,7 +17,7 @@ app.use(express.static('public'))
 
 //Routing
 //app.get('/', usuarioRouter) //.get busca la ruta en especifico
-app.use('/auth', usuarioRouter) //.use busca todas lar rutas que empiezen con una diagonal; Este es el middel where
+app.use('/auth', usuarioRoutes) //.use busca todas lar rutas que empiezen con una diagonal; Este es el middel where
 
 
 //Definir un puerto y arrancanque del proyecto

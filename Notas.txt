@@ -4,3 +4,5 @@ npm i /*Para instalar en package.json todos aquellas dependencias que uses si el
 npm i -D express //*Para instalar dependencias de desarrollo
 npm i -D nodemon //*Dependencia de desarrollo para reiniciar el servidor automaticamente cadavez que guardemos algun cambio
 "server": "nodemon index.js" // >npm run server_
+npm i pug //*Para instalar el Templates Engine de Pug
+npm i -D Tailwind autoprefixer postcss postcss-cliç
