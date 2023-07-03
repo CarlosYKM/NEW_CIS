@@ -4,14 +4,18 @@
 import express from 'express'
 import usuarioRoutes from './routes/usuarioRoutes.js'
 import db from './config/db.js'
+
 //Crear app
 const app = express() 
 
-//Conexion a la base de datos
-try{
-    await db.authentificate();
-    console.log('CONEXION ESTABLECIDA')
-}catch(error){
+
+
+// Conexión a la base de datos
+try {
+    await db.authenticate();
+    db.sync()
+    console.log('Conexión Correcta a la Base de datos')
+} catch (error) {
     console.log(error)
 }
 

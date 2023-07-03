@@ -17,3 +17,5 @@ ORM Ejm.
 Categoria.create({nombre:'Casa'})
 
 npm i sequelize mysql2
+npm i -save tedious //*Microsoft SQL Server
+

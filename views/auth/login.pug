@@ -12,7 +12,7 @@ block contenido
                 div
                 label.block.text-center.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="Usuario") Control de Inventario de Suministros
         div.bg-white.py-8.px-4.shadow
-            form.space-y-5
+            form.space-y-5(method="POST" action="/auth/login")
                 div
                 label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="Usuario") Usuario
                 input#nombre.w-full.px-3.py-2.border-gray-300.rounded-md(placeholder="Usuario" type="email" name="Usuario")
